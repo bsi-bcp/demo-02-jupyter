@@ -232,6 +232,15 @@ with chart_row1_left:
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
         margin=dict(t=10, b=40),
         height=350,
+        hovermode="x unified",
+        xaxis=dict(
+            showspikes=True,
+            spikemode="across",
+            spikesnap="cursor",
+            spikecolor="#888888",
+            spikethickness=1,
+            spikedash="dash",
+        ),
     )
     st.plotly_chart(fig_trend, use_container_width=True)
 
